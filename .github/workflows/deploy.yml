@@ -1,18 +1,15 @@
 name: Deploy
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Test Print
-        env:
-          GREETING: Hi there!
-        run: |
-          echo $GREETING
+    - name: Test Print
+      env:
+        GREETING: Hi there!
+      run: |
+        echo $GREETING
 
